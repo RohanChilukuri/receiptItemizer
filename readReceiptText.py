@@ -29,4 +29,4 @@ def readText(imagePath, flip=False):
     print(lineObjects)
     return lineObjects
 
-readText("test.JPG")
+readText("test.png")

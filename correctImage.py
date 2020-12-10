@@ -44,11 +44,9 @@ def correct(imagePath, flip=False):
     corrected = cv2.adaptiveThreshold(corrected, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
     corrected = cv2.medianBlur(corrected, 5)
 
-    #cv2.imshow("Original", im)
-    #cv2.imshow("Edge Detect", imEdge)
-    #cv2.imshow("Corrected", corrected)
-    #cv2.waitKey(0)
+    cv2.imshow("Original", im)
+    cv2.imshow("Edge Detect", imEdge)
+    cv2.imshow("Corrected", corrected)
+    cv2.waitKey(0)
 
     return corrected
-
-correct("test.JPG")
